@@ -733,9 +733,19 @@
   function sendQuote(e){
     e.preventDefault();
     var f=e.target, ok=document.getElementById('ok');
-    // TODO: fetch('https://adas-iq-904191467.development.catalystserverless.com/server/adasiq-api/api/tool-quote', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:new URLSearchParams(new FormData(f)).toString()})
-    ok.style.display='block'; ok.scrollIntoView({behavior:'smooth',block:'center'});
-    f.querySelectorAll('input,select,button').forEach(function(x){x.disabled=true;});
+    var btn=f.querySelector('button[type=submit]'), orig=btn?btn.textContent:'';
+    if(btn){btn.disabled=true;btn.textContent='Sending…';}
+    fetch('https://adas-iq-904191467.development.catalystserverless.com/server/adasiq-api/api/tool-quote/submit',{
+      method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'},
+      body:new URLSearchParams(new FormData(f)).toString()
+    }).then(function(r){return r.json().catch(function(){return {ok:r.ok};});})
+      .then(function(d){
+        if(!d.ok) throw new Error(d.error||'Something went wrong.');
+        ok.style.display='block'; ok.scrollIntoView({behavior:'smooth',block:'center'});
+        f.querySelectorAll('input,select').forEach(function(x){x.disabled=true;});
+        if(btn){btn.textContent='Sent ✓';}
+      })
+      .catch(function(err){ if(btn){btn.disabled=false;btn.textContent=orig;} alert(err.message||'Could not send. Call 1-844-FIX-ADAS.'); });
     return false;
   }
 </script>
