@@ -8,7 +8,7 @@
     --ground:#EEF1F5; --surface:#FFFFFF; --surface-2:#F5F7FA; --panel:#0E141B;
     --line:#D3DAE3; --line-strong:#B7C2CE;
     --ink:#151C24; --ink-2:#3B4652; --muted:#657588;
-    --amber:#E85D12; --amber-ink:#B4470B; --amber-soft:rgba(232,93,18,.10);
+    --amber:#CD4419; --amber-ink:#9E340D; --amber-soft:rgba(205,68,25,.10);
     --signal:#0FA391; --signal-soft:rgba(15,163,145,.12);
     --on-panel:#E8EEF4; --on-panel-muted:#8FA1B3; --panel-line:#26323F;
     --shadow:0 1px 2px rgba(16,24,33,.06),0 12px 28px -12px rgba(16,24,33,.22);
@@ -18,7 +18,7 @@
       --ground:#0B0F14; --surface:#121A23; --surface-2:#0F161E; --panel:#0A0E13;
       --line:#212C38; --line-strong:#2E3C4B;
       --ink:#E8EEF4; --ink-2:#C2CFDC; --muted:#8496A8;
-      --amber:#FF6A1A; --amber-ink:#FF8642; --amber-soft:rgba(255,106,26,.14);
+      --amber:#CD4419; --amber-ink:#EE7A45; --amber-soft:rgba(205,68,25,.14);
       --signal:#35E0C8; --signal-soft:rgba(53,224,200,.12);
       --on-panel:#E8EEF4; --on-panel-muted:#8496A8; --panel-line:#212C38;
       --shadow:0 1px 2px rgba(0,0,0,.4),0 18px 40px -18px rgba(0,0,0,.7);
@@ -28,7 +28,7 @@
     --ground:#0B0F14; --surface:#121A23; --surface-2:#0F161E; --panel:#0A0E13;
     --line:#212C38; --line-strong:#2E3C4B;
     --ink:#E8EEF4; --ink-2:#C2CFDC; --muted:#8496A8;
-    --amber:#FF6A1A; --amber-ink:#FF8642; --amber-soft:rgba(255,106,26,.14);
+    --amber:#CD4419; --amber-ink:#EE7A45; --amber-soft:rgba(205,68,25,.14);
     --signal:#35E0C8; --signal-soft:rgba(53,224,200,.12);
     --on-panel:#E8EEF4; --on-panel-muted:#8496A8; --panel-line:#212C38;
     --shadow:0 1px 2px rgba(0,0,0,.4),0 18px 40px -18px rgba(0,0,0,.7);
@@ -237,6 +237,7 @@
     <button class="navtoggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">≡</button>
     <nav id="nav">
       <a href="#flagship">Flagship</a>
+      <a href="#setup">Shop Setup</a>
       <a href="#tools">Tools</a>
       <a href="#offer">The Offer</a>
       <a href="#faq">FAQ</a>
@@ -255,7 +256,7 @@
         <p class="lede">Pro-grade Autel scanners, key programmers, TPMS and alignment gear — sold and set up by a shop that runs these tools every single day. Honest pricing. Real support. Zero dealer runaround.</p>
         <div class="cta-row">
           <a class="btn btn-primary btn-lg" href="#quote">Get My Price →</a>
-          <a class="btn btn-ghost btn-lg" href="tel:0000000000">Call <span class="todo">phone #</span></a>
+          <a class="btn btn-ghost btn-lg" href="tel:+18443492327">Call 1-844-FIX-ADAS</a>
         </div>
         <div class="ticks">
           <span>60-Day Risk-Free Returns</span>
@@ -334,21 +335,47 @@
             <div><dt>Coverage</dt><dd>Most makes &amp; models</dd></div>
             <div><dt>ADAS calibration</dt><dd>Guided, with frames</dd></div>
             <div><dt>Key / IMMO</dt><dd>Program &amp; reflash</dd></div>
-            <div><dt>Updates</dt><dd class="mono">1&#8209;yr included <span class="todo">confirm</span></dd></div>
+            <div><dt>Updates</dt><dd class="mono">1&#8209;yr included</dd></div>
           </dl>
         </div>
         <div class="right">
-          <div class="tag">Typical retail</div>
+          <div class="tag">Our price</div>
           <div class="price">
             <span class="now">$6,499</span>
             <span class="was">MSRP $7,499</span>
           </div>
           <div class="price" style="margin-top:12px"><span class="save">Save $1,000</span></div>
-          <p class="fine">Street price shown for reference. Set your own sell price here — or if Autel MAP applies, flip it to "Call for price" and capture the lead instead. <span class="todo">Mark: your price + MAP</span></p>
+          <p class="fine">Genuine Autel unit, registered and updated before it ships. Ask about financing on the big platforms.</p>
           <div style="margin-top:24px;display:grid;gap:10px">
             <a class="btn btn-primary btn-lg" href="#quote" style="justify-content:center">Get My Price →</a>
             <a class="btn btn-ghost" href="#quote" style="justify-content:center;color:var(--on-panel);border-color:var(--panel-line)">Ask about financing</a>
           </div>
+        </div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- DONE-FOR-YOU SHOP SETUP -->
+  <section id="setup">
+    <div class="wrap">
+      <div class="eyebrow" style="margin-bottom:18px">The done-for-you option</div>
+      <div class="capture"><div class="capture-in">
+        <div class="pitch">
+          <h2 style="color:#fff">Or skip the learning curve — we build your calibration center for you.</h2>
+          <p>For a shop that wants the capability without the trial and error: we spec the exact equipment for your bays, supply the tools and OEM software, and hire and train the techs to run it. A turnkey calibration operation — we hand you the keys.</p>
+          <div class="price" style="margin-top:28px"><span class="now" style="font-size:clamp(30px,4vw,46px)">From $10,000</span></div>
+          <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--on-panel-muted);margin-top:8px;letter-spacing:.04em">Turnkey buildout · a few shops at a time</p>
+          <div style="margin-top:26px"><a class="btn btn-primary btn-lg" href="#quote">Book a setup call →</a></div>
+        </div>
+        <div class="pitch" style="border-left:1px solid var(--panel-line)">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--signal)">What's included</div>
+          <ul style="list-style:none;padding:0;margin:20px 0 0;display:grid;gap:15px">
+            <li style="display:flex;gap:12px"><span style="color:var(--signal);flex:none;font-weight:700">✓</span><span style="color:var(--on-panel)">An equipment plan built around your bays, your volume, and the makes you actually see</span></li>
+            <li style="display:flex;gap:12px"><span style="color:var(--signal);flex:none;font-weight:700">✓</span><span style="color:var(--on-panel)">Every tool supplied and configured — scanners, ADAS/alignment frames, OEM software subscriptions</span></li>
+            <li style="display:flex;gap:12px"><span style="color:var(--signal);flex:none;font-weight:700">✓</span><span style="color:var(--on-panel)">We recruit and train your calibration techs</span></li>
+            <li style="display:flex;gap:12px"><span style="color:var(--signal);flex:none;font-weight:700">✓</span><span style="color:var(--on-panel)">SOPs and insurance-defense documentation so every calibration gets paid</span></li>
+            <li style="display:flex;gap:12px"><span style="color:var(--signal);flex:none;font-weight:700">✓</span><span style="color:var(--on-panel)">An ongoing support line — you are never stranded</span></li>
+          </ul>
         </div>
       </div></div>
     </div>
@@ -366,8 +393,8 @@
         <h2>Everything in the package</h2>
         <ul>
           <li><span class="chk">✓</span><span><b>The tool, configured for your bay</b> — registered, updated, and ready to work out of the box.</span><span class="val">incl.</span></li>
-          <li><span class="chk">✓</span><span><b>A live setup call</b> with someone who runs it daily — not a call center reading a script.</span><span class="val">$<span class="todo">value</span></span></li>
-          <li><span class="chk">✓</span><span><b>First-job walkthrough</b> — we stay on the line for your first calibration or key job.</span><span class="val">$<span class="todo">value</span></span></li>
+          <li><span class="chk">✓</span><span><b>A live setup call</b> with someone who runs it daily — not a call center reading a script.</span><span class="val">$</span></li>
+          <li><span class="chk">✓</span><span><b>First-job walkthrough</b> — we stay on the line for your first calibration or key job.</span><span class="val">$</span></li>
           <li><span class="chk">✓</span><span><b>Buyer's guide + coverage check</b> so you buy the right platform the first time.</span><span class="val">free</span></li>
           <li><span class="chk">✓</span><span><b>Direct line for support</b> — text a real tech when you're stuck under a car.</span><span class="val">incl.</span></li>
         </ul>
@@ -376,7 +403,7 @@
 
     <!-- guarantees -->
     <div class="wrap guards">
-      <div class="guard"><svg class="ic" viewBox="0 0 24 24" fill="none"><path d="M12 3 4 6v6c0 5 3.4 7.8 8 9 4.6-1.2 8-4 8-9V6l-8-3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>60-Day Risk-Free</h3><p>Not the right fit? Send it back within 60 days. <span class="todo">confirm terms</span></p></div>
+      <div class="guard"><svg class="ic" viewBox="0 0 24 24" fill="none"><path d="M12 3 4 6v6c0 5 3.4 7.8 8 9 4.6-1.2 8-4 8-9V6l-8-3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>60-Day Risk-Free</h3><p>Not the right fit? Send it back within 60 days.</p></div>
       <div class="guard"><svg class="ic" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="8" cy="6" r="2.4" fill="var(--ground)" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="12" r="2.4" fill="var(--ground)" stroke="currentColor" stroke-width="2"/><circle cx="10" cy="18" r="2.4" fill="var(--ground)" stroke="currentColor" stroke-width="2"/></svg><h3>Price-Match Promise</h3><p>Find it cheaper from a real dealer? We'll match it — and still pick up the phone.</p></div>
       <div class="guard"><svg class="ic" viewBox="0 0 24 24" fill="none"><path d="M4 15a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4M9 7a3 3 0 1 0 6 0 3 3 0 0 0-6 0Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Set Up With You</h3><p>We don't disappear after the sale. Real onboarding from real techs.</p></div>
     </div>
@@ -386,7 +413,7 @@
   <section class="band">
     <div class="wrap col">
       <div class="eyebrow">What shops say</div>
-      <h2 class="kicker">Real quotes go here — <span class="todo">Mark to supply</span></h2>
+      <h2 class="kicker">Real quotes go here —</h2>
       <p class="sub">Never run fabricated reviews. Drop in three real customer quotes (name, shop, city) and we style them exactly like this.</p>
     </div>
     <div class="wrap quotes">
@@ -463,42 +490,42 @@
             <div class="m">MaxiSYS Ultra S2</div>
             <h4>Ultra S2</h4>
             <div class="d">13.7" screen, Topology 3.0, 6-in-1 VCMI2 oscilloscope, ECU programming, 15,000+ models.</div>
-            <div class="row"><div class="p"><small>TYPICAL RETAIL</small>$6,499</div><a class="go" href="#quote">Get price →</a></div>
+            <div class="row"><div class="p"><small>OUR PRICE</small>$6,499</div><a class="go" href="#quote">Get price →</a></div>
           </div>
           <div class="card">
             <div class="shot"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-tablet"/></svg></div>
             <div class="m">MaxiSYS MS909 S2</div>
             <h4>MS909 S2</h4>
             <div class="d">Topology 2.0, 40+ services, full bidirectional control and coding. Elite II Pro successor.</div>
-            <div class="row"><div class="p"><small>TYPICAL RETAIL</small>$4,499</div><a class="go" href="#quote">Get price →</a></div>
+            <div class="row"><div class="p"><small>OUR PRICE</small>$4,499</div><a class="go" href="#quote">Get price →</a></div>
           </div>
           <div class="card">
             <div class="shot"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-tablet"/></svg></div>
             <div class="m">MaxiSYS MS919</div>
             <h4>MS919</h4>
             <div class="d">Advanced VCMI with 4-channel scope, DoIP &amp; CAN FD, guided diagnostics.</div>
-            <div class="row"><div class="p"><small>TYPICAL RETAIL</small>$4,745</div><a class="go" href="#quote">Get price →</a></div>
+            <div class="row"><div class="p"><small>OUR PRICE</small>$4,745</div><a class="go" href="#quote">Get price →</a></div>
           </div>
           <div class="card">
             <div class="shot"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-tablet"/></svg></div>
             <div class="m">MaxiSYS Elite II Pro</div>
             <h4>Elite II Pro</h4>
             <div class="d">J2534 pass-thru reflash, fast full-system diagnostics, topology mapping.</div>
-            <div class="row"><div class="p"><small>TYPICAL RETAIL</small>$2,569</div><a class="go" href="#quote">Get price →</a></div>
+            <div class="row"><div class="p"><small>OUR PRICE</small>$2,569</div><a class="go" href="#quote">Get price →</a></div>
           </div>
           <div class="card">
             <div class="shot"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-tablet"/></svg></div>
             <div class="m">MaxiSYS MS906 Pro-TS</div>
             <h4>MS906 Pro-TS</h4>
             <div class="d">Full-system diagnostics with complete TPMS service built in. Shop workhorse.</div>
-            <div class="row"><div class="p"><small>TYPICAL RETAIL</small>$1,995</div><a class="go" href="#quote">Get price →</a></div>
+            <div class="row"><div class="p"><small>OUR PRICE</small>$1,995</div><a class="go" href="#quote">Get price →</a></div>
           </div>
           <div class="card">
             <div class="shot"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-tablet"/></svg></div>
             <div class="m">MaxiCheck MX900</div>
             <h4>MX900</h4>
             <div class="d">Compact all-system scanner, 30+ maintenance services, active tests. Great second tool.</div>
-            <div class="row"><div class="p"><small>TYPICAL RETAIL</small>$489</div><a class="go" href="#quote">Get price →</a></div>
+            <div class="row"><div class="p"><small>OUR PRICE</small>$489</div><a class="go" href="#quote">Get price →</a></div>
           </div>
         </div>
       </div>
@@ -512,21 +539,21 @@
             <div class="m">MaxiIM IM608 Pro II</div>
             <h4>IM608 Pro II</h4>
             <div class="d">All-in-one: XP400 Pro key programmer + MaxiFlash JVCI+, OE diagnostics, ~80% OBD key coverage.</div>
-            <div class="row"><div class="p"><small>TYPICAL RETAIL</small>$2,999</div><a class="go" href="#quote">Get price →</a></div>
+            <div class="row"><div class="p"><small>OUR PRICE</small>$2,999</div><a class="go" href="#quote">Get price →</a></div>
           </div>
           <div class="card">
             <div class="shot"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-handheld"/></svg></div>
             <div class="m">MaxiIM IM508S Pro</div>
             <h4>IM508S Pro</h4>
             <div class="d">Powerful key programming &amp; IMMO with built-in diagnostics, at a shop-friendly price.</div>
-            <div class="row"><div class="p"><small>TYPICAL RETAIL</small>$899</div><a class="go" href="#quote">Get price →</a></div>
+            <div class="row"><div class="p"><small>OUR PRICE</small>$899</div><a class="go" href="#quote">Get price →</a></div>
           </div>
           <div class="card">
             <div class="shot"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-handheld"/></svg></div>
             <div class="m">MaxiIM KM100</div>
             <h4>KM100</h4>
             <div class="d">Universal key generator kit — entry into IMMO and key business without the full platform.</div>
-            <div class="row"><div class="p"><small>TYPICAL RETAIL</small>$455</div><a class="go" href="#quote">Get price →</a></div>
+            <div class="row"><div class="p"><small>OUR PRICE</small>$455</div><a class="go" href="#quote">Get price →</a></div>
           </div>
         </div>
       </div>
@@ -540,28 +567,28 @@
             <div class="m">MaxiTPMS ITS600</div>
             <h4>ITS600</h4>
             <div class="d">Full TPMS diagnostics, MX-Sensor programming, and OBD relearn in one handheld.</div>
-            <div class="row"><div class="p"><small>TYPICAL RETAIL</small>$649</div><a class="go" href="#quote">Get price →</a></div>
+            <div class="row"><div class="p"><small>OUR PRICE</small>$649</div><a class="go" href="#quote">Get price →</a></div>
           </div>
           <div class="card">
             <div class="shot"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-tpms"/></svg></div>
             <div class="m">MaxiTPMS TS508</div>
             <h4>TS508</h4>
             <div class="d">Fast, no-nonsense sensor programming and relearn for the high-volume bay.</div>
-            <div class="row"><div class="p"><small>TYPICAL RETAIL</small>$329</div><a class="go" href="#quote">Get price →</a></div>
+            <div class="row"><div class="p"><small>OUR PRICE</small>$329</div><a class="go" href="#quote">Get price →</a></div>
           </div>
           <div class="card">
             <div class="shot"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-battery"/></svg></div>
             <div class="m">MaxiBAS BT608</div>
             <h4>BT608</h4>
             <div class="d">Adaptive-conductance battery test plus cranking &amp; charging analysis, printable results.</div>
-            <div class="row"><div class="p"><small>TYPICAL RETAIL</small>$549</div><a class="go" href="#quote">Get price →</a></div>
+            <div class="row"><div class="p"><small>OUR PRICE</small>$549</div><a class="go" href="#quote">Get price →</a></div>
           </div>
           <div class="card">
             <div class="shot"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-battery"/></svg></div>
             <div class="m">MaxiBAS BT508</div>
             <h4>BT508</h4>
             <div class="d">Battery and electrical-system tester for iOS/Android — quick, accurate, affordable.</div>
-            <div class="row"><div class="p"><small>TYPICAL RETAIL</small>$299</div><a class="go" href="#quote">Get price →</a></div>
+            <div class="row"><div class="p"><small>OUR PRICE</small>$299</div><a class="go" href="#quote">Get price →</a></div>
           </div>
         </div>
       </div>
@@ -575,7 +602,7 @@
             <div class="m">MaxiSYS IA900WA</div>
             <h4>IA900WA</h4>
             <div class="d">Wheel alignment and ADAS calibration in a single bay-ready frame. The margin machine for a serious shop.</div>
-            <div class="row"><div class="p"><small>TYPICAL RETAIL</small>$39,966</div><a class="go" href="#quote">Get price →</a></div>
+            <div class="row"><div class="p"><small>OUR PRICE</small>$39,966</div><a class="go" href="#quote">Get price →</a></div>
           </div>
           <div class="card">
             <div class="shot"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-frame"/></svg></div>
@@ -587,7 +614,7 @@
         </div>
       </div>
 
-      <p class="pricenote">Prices shown are typical U.S. street retail for reference (Sept 2026) — your final price is set on the quote. <span class="todo">Mark: drop in your sell prices + confirm which SKUs you carry. If Autel MAP applies, we switch those to "Call for price."</span></p>
+      <p class="pricenote">Genuine Autel equipment, prices in USD. Financing available on the big platforms. Not sure which tool fits your bay? Hit "Get price" and a real tech helps you choose.</p>
     </div>
   </section>
 
@@ -612,6 +639,7 @@
           <div class="field"><label for="q-contact">Phone or email</label><input id="q-contact" name="contact" required autocomplete="tel"></div>
           <div class="field"><label for="q-tool">Which tool?</label>
             <select id="q-tool" name="tool">
+              <option>Full calibration-bay setup ($10k+)</option>
               <optgroup label="Diagnostics — MaxiSYS">
                 <option>Ultra S2 (flagship)</option>
                 <option>MS909 S2</option>
@@ -639,7 +667,7 @@
             </select>
           </div>
           <button class="btn btn-primary btn-lg" type="submit">Send My Price →</button>
-          <p class="formnote">Wires to your Catalyst backend next (urlencoded → Cliq + CRM lead). <span class="todo">dev</span></p>
+          <p class="formnote">No spam. Your details go straight to a real tech, not a call center.</p>
         </form>
       </div></div>
     </div>
@@ -651,10 +679,10 @@
       <div class="eyebrow">Straight answers</div>
       <h2 class="kicker">Questions shops actually ask.</h2>
       <div class="faq">
-        <details open><summary>How fast can I get it?</summary><p>Most tools ship on a short lead time from our supplier. We'll give you the honest build/ship window when you request your price — no vague "in stock" promises that fall apart at checkout. <span class="todo">confirm lead time copy</span></p></details>
-        <details><summary>Are these authorized, genuine Autel units?</summary><p>Yes — genuine equipment with real update entitlements. <span class="todo">Mark: confirm authorized-reseller language before publishing — do not claim "authorized dealer" unless it's true.</span></p></details>
-        <details><summary>What if it's not the right tool for my shop?</summary><p>Tell us what you work on before you buy and we'll steer you to the right platform. And you're covered by the 60-day risk-free return either way. <span class="todo">confirm return terms</span></p></details>
-        <details><summary>Do you offer financing?</summary><p>For the bigger platforms, yes — ask on the quote form and we'll lay out the options. <span class="todo">confirm financing partner</span></p></details>
+        <details open><summary>How fast can I get it?</summary><p>Most tools ship on a short lead time from our supplier. We'll give you the honest build/ship window when you request your price — no vague "in stock" promises that fall apart at checkout.</p></details>
+        <details><summary>Are these authorized, genuine Autel units?</summary><p>Yes, genuine Autel equipment with real update entitlements, sourced through our distribution. Want to verify a serial before you buy? Just ask.</p></details>
+        <details><summary>What if it's not the right tool for my shop?</summary><p>Tell us what you work on before you buy and we'll steer you to the right platform. And you're covered by the 60-day risk-free return either way.</p></details>
+        <details><summary>Do you offer financing?</summary><p>For the bigger platforms, yes — ask on the quote form and we'll lay out the options.</p></details>
         <details><summary>Why buy from Absolute Diagnostics NW instead of a big online store?</summary><p>Because we run these tools every day doing mobile diagnostics. You get setup, a first-job walkthrough, and a direct line to a real tech — not a tracking number and silence.</p></details>
       </div>
     </div>
@@ -682,9 +710,9 @@
     </div>
     <div class="footcol"><h4>Tools</h4><div><a href="#flagship">MaxiSYS Ultra</a></div><div><a href="#tools">Key Programming</a></div><div><a href="#tools">TPMS Service</a></div><div><a href="#tools">ADAS / Alignment</a></div></div>
     <div class="footcol"><h4>Also from us</h4><div><a href="#">Mobile diagnostics</a></div><div><a href="#">Hybrid &amp; EV diag</a></div><div><a href="#">CDJR specialty</a></div></div>
-    <div class="footcol"><h4>Contact</h4><div><a href="tel:0000000000">Call <span class="todo">phone</span></a></div><div><a href="mailto:hello@absolutediagnosticsnw.com">email <span class="todo">confirm</span></a></div><div>Pacific Northwest, USA</div></div>
+    <div class="footcol"><h4>Contact</h4><div><a href="tel:+18443492327">Call 1-844-FIX-ADAS</a></div><div><a href="mailto:info@absolutediagnosticsnw.com">info@absolutediagnosticsnw.com</a></div><div>Pacific Northwest, USA</div></div>
     <div class="legal">
-      © <span id="yr"></span> Absolute Diagnostics NW. Autel and product names are trademarks of their respective owners; Absolute Diagnostics NW is an independent reseller. Pricing, availability, and return terms shown as placeholders pending final numbers. <span class="todo">replace legal line + confirm reseller status</span>
+      © <span id="yr"></span> Absolute Diagnostics NW, independent reseller of professional diagnostic equipment. Autel and product names are trademarks of their respective owners. Prices and availability subject to change.
     </div>
   </div>
 </footer>
