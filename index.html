@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>Absolute Diagnostics NW</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -185,6 +186,8 @@
   .card.hero-item{border-color:var(--amber);box-shadow:0 0 0 1px var(--amber-soft) inset}
   .card .shot{position:relative;aspect-ratio:16/10;background:radial-gradient(130% 120% at 50% 26%,var(--surface-2),var(--surface));border:1px solid var(--line);border-radius:9px;margin-bottom:14px;display:grid;place-items:center;overflow:hidden}
   .card .shot .dev{width:78%;height:78%;filter:drop-shadow(0 10px 16px rgba(0,0,0,.3))}
+  .card .shot:has(.pic){background:#fff}
+  .card .shot:has(.pic) .dev{display:none}
   .card .shot .pic{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:12px;z-index:1}
   .card .flag{position:absolute;top:8px;left:8px;z-index:2;font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber-ink);background:color-mix(in srgb,var(--amber-soft) 60%,var(--surface));border:1px solid var(--amber);border-radius:4px;padding:2px 6px;backdrop-filter:blur(2px)}
   .card .m{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);letter-spacing:.06em}
@@ -516,19 +519,19 @@
         <div class="cat-h"><h3>Full-System Diagnostics &amp; Programming</h3><span class="c">MaxiSYS</span></div>
         <div class="grid">
           <div class="card hero-item">
-            <div class="shot"><span class="flag">★ Flagship</span><svg class="dev" viewBox="0 0 120 90"><use href="#dev-tablet"/></svg></div>
+            <div class="shot"><span class="flag">★ Flagship</span><img class="pic" src="img/autel/maxisys-ultra-s2_01_1200x1200.webp" alt="Autel MaxiSYS Ultra S2 diagnostic tablet" loading="lazy"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-tablet"/></svg></div>
             <div class="m">MaxiSYS Ultra S2</div><h4>Ultra S2</h4>
             <div class="d">13.7" screen, Topology 3.0, 6-in-1 VCMI2 oscilloscope, ECU programming, 15,000+ models.</div>
             <div class="row"><div class="p"><small>OUR PRICE</small>$6,499</div><a class="go" href="#quote">Get price →</a></div>
           </div>
           <div class="card">
-            <div class="shot"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-tablet"/></svg></div>
+            <div class="shot"><img class="pic" src="img/autel/maxisys_ms909s2_01_1200x1200.webp" alt="Autel MaxiSYS MS909 S2 diagnostic tablet" loading="lazy"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-tablet"/></svg></div>
             <div class="m">MaxiSYS MS909 S2</div><h4>MS909 S2</h4>
             <div class="d">Topology 2.0, 40+ services, full bidirectional control and coding. Elite II Pro successor.</div>
             <div class="row"><div class="p"><small>OUR PRICE</small>$4,499</div><a class="go" href="#quote">Get price →</a></div>
           </div>
           <div class="card">
-            <div class="shot"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-tablet"/></svg></div>
+            <div class="shot"><img class="pic" src="img/autel/maxisys_ms919s2_01_1200x1200.webp" alt="Autel MaxiSYS MS919 diagnostic tablet" loading="lazy"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-tablet"/></svg></div>
             <div class="m">MaxiSYS MS919</div><h4>MS919</h4>
             <div class="d">Advanced VCMI with 4-channel scope, DoIP &amp; CAN FD, guided diagnostics.</div>
             <div class="row"><div class="p"><small>OUR PRICE</small>$4,745</div><a class="go" href="#quote">Get price →</a></div>
@@ -558,7 +561,7 @@
         <div class="cat-h"><h3>Key Programming &amp; IMMO</h3><span class="c">MaxiIM</span></div>
         <div class="grid">
           <div class="card">
-            <div class="shot"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-handheld"/></svg></div>
+            <div class="shot"><img class="pic" src="img/autel/maxiim_im608_01_1200x1200.webp" alt="Autel MaxiIM IM608 key programming tablet" loading="lazy"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-handheld"/></svg></div>
             <div class="m">MaxiIM IM608 Pro II</div><h4>IM608 Pro II</h4>
             <div class="d">All-in-one: XP400 Pro key programmer + MaxiFlash JVCI+, OE diagnostics, ~80% OBD key coverage.</div>
             <div class="row"><div class="p"><small>OUR PRICE</small>$2,999</div><a class="go" href="#quote">Get price →</a></div>
@@ -582,13 +585,13 @@
         <div class="cat-h"><h3>TPMS &amp; Battery Service</h3><span class="c">MaxiTPMS · MaxiBAS</span></div>
         <div class="grid">
           <div class="card">
-            <div class="shot"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-tpms"/></svg></div>
+            <div class="shot"><img class="pic" src="img/autel/its600-status-1200x1200-2.webp" alt="Autel MaxiTPMS ITS600 TPMS tool" loading="lazy"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-tpms"/></svg></div>
             <div class="m">MaxiTPMS ITS600</div><h4>ITS600</h4>
             <div class="d">Full TPMS diagnostics, MX-Sensor programming, and OBD relearn in one handheld.</div>
             <div class="row"><div class="p"><small>OUR PRICE</small>$649</div><a class="go" href="#quote">Get price →</a></div>
           </div>
           <div class="card">
-            <div class="shot"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-tpms"/></svg></div>
+            <div class="shot"><img class="pic" src="img/autel/ts508wf-status-1200x1200-2.webp" alt="Autel MaxiTPMS TS508 TPMS tool" loading="lazy"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-tpms"/></svg></div>
             <div class="m">MaxiTPMS TS508</div><h4>TS508</h4>
             <div class="d">Fast, no-nonsense sensor programming and relearn for the high-volume bay.</div>
             <div class="row"><div class="p"><small>OUR PRICE</small>$329</div><a class="go" href="#quote">Get price →</a></div>
@@ -612,7 +615,7 @@
         <div class="cat-h"><h3>ADAS &amp; Alignment</h3><span class="c">Big-ticket · financing available</span></div>
         <div class="grid">
           <div class="card hero-item">
-            <div class="shot"><span class="flag">Bay system</span><svg class="dev" viewBox="0 0 120 90"><use href="#dev-frame"/></svg></div>
+            <div class="shot"><span class="flag">Bay system</span><img class="pic" src="img/autel/ia900_award_1200x1200.webp" alt="Autel MaxiSYS IA900WA ADAS and alignment system" loading="lazy"><svg class="dev" viewBox="0 0 120 90"><use href="#dev-frame"/></svg></div>
             <div class="m">MaxiSYS IA900WA</div><h4>IA900WA</h4>
             <div class="d">Wheel alignment and ADAS calibration in a single bay-ready frame. The margin machine for a serious shop.</div>
             <div class="row"><div class="p"><small>OUR PRICE</small>$39,966</div><a class="go" href="#quote">Get price →</a></div>
